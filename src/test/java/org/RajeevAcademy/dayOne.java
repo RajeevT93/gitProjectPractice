@@ -31,6 +31,10 @@ public class dayOne {
         //Assert.assertTrue(false);
    }
 
+   @Test
+   public void demoTwo(){
+       System.out.println("This is demo two");
+   }
 
     @Test(groups = "smoke")
     public void secondTest(){
