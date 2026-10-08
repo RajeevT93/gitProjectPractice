@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="testNGPractice" parallel="tests" thread-count="5">
+
+
+    <listeners>
+        <listener class-name="org.RajeevAcademy.listeners"/>
+    </listeners>
+
+    <!--
+    <groups>
+        <run>
+
+            <include name="smoke"/>
+        </run>
+    </groups>
+    -->
+    <test name="Regression">
+<classes>
+
+    <class name = "org.RajeevAcademy.dayOne"/>
+    <class name = "org.RajeevAcademy.dayTwo"/>
+    <class name = "org.RajeevAcademy.dayFour"/>
+</classes>
+    </test>
+
+    <test name="Regression Two">
+        <parameter name="URL" value="Web Login Car">
+            <parameter name = "APIKey" value = "123456"/>
+        </parameter>
+        <classes>
+            <class name="org.RajeevAcademy.dayThree">
+                    
+                    
+                    
+                <methods>
+                    <exclude name="Api.*"></exclude>
+                </methods>
+            </class>
+
+
+
+
+        </classes>
+
+
+
+    </test>
+</suite>
