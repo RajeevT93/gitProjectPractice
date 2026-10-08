@@ -43,6 +43,14 @@ public class dayOne {
         System.out.println("This is demo Three");
     }
 
+    public void demoFour(){
+        System.out.println("This is demo Four");
+    }
+
+    public void demoFive(){
+        System.out.println("This is demo Five");
+    }
+
     @Test(groups = "smoke")
     public void secondTest(){
         System.out.println("bye");
