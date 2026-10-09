@@ -20,4 +20,11 @@ public class dayTwo {
     public void bfsuite(){
         System.out.println("I will execute before Test");
     }
+
+    @Test
+    public void getDataTwo(){
+
+
+        System.out.println("This is getDataTwo");
+    }
 }
